@@ -1,5 +1,5 @@
 vmdebootstrap (0.1.0-1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release (Closes: #711794)
 
- -- Neil Williams <codehelp@debian.org>  Fri, 07 Jun 2013 16:54:38 +0100
+ -- Neil Williams <codehelp@debian.org>  Sun, 09 Jun 2013 22:39:52 +0100
