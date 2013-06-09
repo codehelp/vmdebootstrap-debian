@@ -2,7 +2,8 @@ Source: vmdebootstrap
 Section: admin
 Priority: extra
 Maintainer: Neil Williams <codehelp@debian.org>
-Build-Depends: debhelper (>= 8.0.0), python-support
+Build-Depends: debhelper (>= 8.0.0),
+ python | python-all | python-dev | python-all-dev
 Standards-Version: 3.9.4
 Homepage: https://gitorious.org/vmdebootstrap
 Vcs-Git: git://git.debian.org/collab-maint/vmdebootstrap.git
