@@ -2,6 +2,8 @@ Source: vmdebootstrap
 Section: admin
 Priority: extra
 Maintainer: Neil Williams <codehelp@debian.org>
+Uploaders: Lars Wirzenius <liw@liw.fi>,
+ Antonio Terceiro <terceiro@debian.org>
 Build-Depends: debhelper (>= 8.0.0),
  python | python-all | python-dev | python-all-dev
 X-Python-Version: 2.7
