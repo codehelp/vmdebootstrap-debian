@@ -2,4 +2,4 @@ vmdebootstrap (0.1.0-1) unstable; urgency=low
 
   * Initial release (Closes: #711794)
 
- -- Neil Williams <codehelp@debian.org>  Sun, 09 Jun 2013 22:39:52 +0100
+ -- Neil Williams <codehelp@debian.org>  Tue, 23 Jul 2013 13:16:41 +0100
