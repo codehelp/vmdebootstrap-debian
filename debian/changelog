@@ -1,3 +1,12 @@
+vmdebootstrap (0.1.0-2) unstable; urgency=low
+
+  * Restrict the package to the usable architectures,
+    amd64 and i386 only. (Closes: #722921)
+  * Fix problem with the orig.tar.gz differing from the
+    0.1.0 upstream tag. (Closes: #721668)
+
+ -- Neil Williams <codehelp@debian.org>  Sun, 15 Sep 2013 20:27:32 +0100
+
 vmdebootstrap (0.1.0-1) unstable; urgency=low
 
   * Initial release (Closes: #711794)
