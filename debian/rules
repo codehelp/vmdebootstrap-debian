@@ -17,5 +17,6 @@ override_dh_auto_clean:
 
 override_dh_auto_install:
 	dh_auto_install
+	dh_lintian
 	cp vmdebootstrap.8.in vmdebootstrap.in
 
