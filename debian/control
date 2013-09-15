@@ -13,7 +13,7 @@ Vcs-Git: git://git.debian.org/collab-maint/vmdebootstrap.git
 Vcs-Browser: https://github.com/codehelp/vmdebootstrap-debian/debian
 
 Package: vmdebootstrap
-Architecture: any
+Architecture: amd64 i386
 Depends: debootstrap, extlinux (<< 3:6.00~), qemu-utils,
  parted, mbr, kpartx, python-cliapp, ${python:Depends}, ${misc:Depends}
 Description: Bootstrap Debian into a (virtual machine) disk image
