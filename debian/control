@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 8.0.0),
 X-Python-Version: 2.7
 Standards-Version: 3.9.4
 Homepage: https://gitorious.org/vmdebootstrap
-Vcs-Git: git://git.debian.org/collab-maint/vmdebootstrap.git
-Vcs-Browser: https://github.com/codehelp/vmdebootstrap-debian/debian
+Vcs-Git: git://github.com/codehelp/vmdebootstrap-debian.git
+Vcs-Browser: https://github.com/codehelp/vmdebootstrap-debian/tree/master/debian
 
 Package: vmdebootstrap
 Architecture: amd64 i386
