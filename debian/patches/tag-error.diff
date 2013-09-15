@@ -7,14 +7,6 @@ Bug-Debian: http://bugs.debian.org/721668
 
 ---
 
-Origin: <vendor|upstream|other>, <url of original patch>
-Bug: <url in upstream bugtracker>
-Bug-Debian: http://bugs.debian.org/<bugnumber>
-Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
-Forwarded: <no|not-needed|url proving that it has been forwarded>
-Reviewed-By: <name and email of someone who approved the patch>
-Last-Update: <YYYY-MM-DD>
-
 --- vmdebootstrap-0.1.0.orig/vmdebootstrap
 +++ vmdebootstrap-0.1.0/vmdebootstrap
 @@ -73,6 +73,11 @@ class VmDebootstrap(cliapp.Application):
