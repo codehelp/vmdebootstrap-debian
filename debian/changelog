@@ -1,3 +1,10 @@
+vmdebootstrap (0.2.0-1) unstable; urgency=low
+
+  * Update for new upstream location and new
+    upstream release. (Closes: #728138)
+
+ -- Neil Williams <codehelp@debian.org>  Thu, 21 Nov 2013 22:49:12 +0000
+
 vmdebootstrap (0.1.0-2) unstable; urgency=low
 
   * Restrict the package to the usable architectures,
