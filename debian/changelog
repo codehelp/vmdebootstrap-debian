@@ -1,7 +1,8 @@
-vmdebootstrap (0.2.0-1) unstable; urgency=low
+vmdebootstrap (0.2-1) unstable; urgency=medium
 
   * Update for new upstream location and new
     upstream release. (Closes: #728138)
+  * Adapt copyright and watch file to new upstream location.
 
  -- Neil Williams <codehelp@debian.org>  Thu, 21 Nov 2013 22:49:12 +0000
 

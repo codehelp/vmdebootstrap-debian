@@ -1,3 +1,2 @@
 version=3
-opts=downloadurlmangle=s/trees/archive-tarball/,filenamemangle=s/.*\/(.*)/<package>-$1.tar.gz/ \
-  http://gitorious.org/vmdebootstrap/vmdebootstrap/trees/vmdebootstrap-(\d+\.\d+\.\d+)
+http://git.liw.fi/cgi-bin/cgit/cgit.cgi/vmdebootstrap/refs/ /cgi-bin/cgit/cgit.cgi/vmdebootstrap/snapshot/vmdebootstrap-(.+)\.tar\.gz
