@@ -1,0 +1,25 @@
+Description: Make kpartx wait until partitions are actually created.
+ This should fix an issue with /dev/mapper/loop* partition not
+ being available for mkfs step after kpartx as reported by many users.
+ .
+ vmdebootstrap (0.2-2) unstable; urgency=medium
+ .
+   * Make kpartx wait whilst the partitions are created.
+     (Closes: #741407)
+Author: Sunil Mohan Adapa <sunil@medhas.org>
+Bug-Debian: http://bugs.debian.org/741407
+Reviewed-By: Neil Williams <codehelp@debian.org>
+
+---
+
+--- vmdebootstrap-0.2.orig/vmdebootstrap
++++ vmdebootstrap-0.2/vmdebootstrap
+@@ -220,7 +220,7 @@ class VmDebootstrap(cliapp.Application):
+         self.runcmd(['install-mbr', self.settings['image']])
+ 
+     def setup_kpartx(self):
+-        out = self.runcmd(['kpartx', '-av', self.settings['image']])
++        out = self.runcmd(['kpartx', '-avs', self.settings['image']])
+         if self.settings['bootsize']:
+             bootindex = 0
+             rootindex = 1
