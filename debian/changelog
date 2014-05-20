@@ -1,3 +1,11 @@
+vmdebootstrap (0.2-3) unstable; urgency=medium
+
+  * Drop (<< 3:6.00~) from extlinux dependency (Closes: #748650). I was able
+    to generate an image and boot it with kvm just fine with extlinux
+    3:6.03~pre1+dfsg-4
+
+ -- Antonio Terceiro <terceiro@debian.org>  Tue, 20 May 2014 10:07:15 -0300
+
 vmdebootstrap (0.2-2) unstable; urgency=medium
 
   * Make kpartx wait whilst the partitions are created.

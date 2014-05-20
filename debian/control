@@ -14,7 +14,7 @@ Vcs-Browser: https://github.com/codehelp/vmdebootstrap-debian/tree/master/debian
 
 Package: vmdebootstrap
 Architecture: amd64 i386
-Depends: debootstrap, extlinux (<< 3:6.00~), qemu-utils,
+Depends: debootstrap, extlinux, qemu-utils,
  parted, mbr, kpartx, python-cliapp, ${python:Depends}, ${misc:Depends}
 Description: Bootstrap Debian into a (virtual machine) disk image
  vmdebootstrap is a wrapper around debootstrap to install Debian
