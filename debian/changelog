@@ -1,3 +1,13 @@
+vmdebootstrap (0.3-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+  * Allows images to not always be owned by root. Thanks to Nick Daly 
+    <nick.m.daly@gmail.com> (Closes: #748477)
+  * Drop manpage patch, included upstream
+  * Drop kpartx patch, included upstream
+
+ -- Neil Williams <codehelp@debian.org>  Sun, 10 Aug 2014 12:55:31 +0100
+
 vmdebootstrap (0.2-3) unstable; urgency=medium
 
   * Drop (<< 3:6.00~) from extlinux dependency (Closes: #748650). I was able
