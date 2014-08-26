@@ -13,9 +13,10 @@ Vcs-Git: git://anonscm.debian.org/collab-maint/vmdebootstrap.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/vmdebootstrap.git;a=summary
 
 Package: vmdebootstrap
-Architecture: amd64 i386
-Depends: debootstrap, extlinux, qemu-utils,
- parted, mbr, kpartx, python-cliapp, ${python:Depends}, ${misc:Depends}
+Architecture: linux-any
+Depends: debootstrap, qemu-utils,
+ extlinux [amd64], extlinux [i386], mbr [amd64], mbr [i386],
+ parted, kpartx, python-cliapp, ${python:Depends}, ${misc:Depends}
 Recommends: squashfs-tools
 Description: Bootstrap Debian into a (virtual machine) disk image
  vmdebootstrap is a wrapper around debootstrap to install Debian
