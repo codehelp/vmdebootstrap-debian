@@ -5,6 +5,7 @@ vmdebootstrap (0.3-1) UNRELEASED; urgency=medium
     <nick.m.daly@gmail.com> (Closes: #748477)
   * Drop manpage patch, included upstream
   * Drop kpartx patch, included upstream
+  * Add example customisation scripts for armhf targets.
 
  -- Neil Williams <codehelp@debian.org>  Sun, 10 Aug 2014 12:55:31 +0100
 

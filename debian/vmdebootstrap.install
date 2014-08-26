@@ -1,1 +1,2 @@
 vmdebootstrap ./usr/sbin/
+examples ./usr/share/vmdebootstrap/
