@@ -15,9 +15,13 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/vmdebootstrap.git;
 Package: vmdebootstrap
 Architecture: linux-any
 Depends: debootstrap, qemu-utils,
- extlinux [amd64], extlinux [i386], mbr [amd64], mbr [i386],
+ extlinux [amd64], extlinux [i386],
  parted, kpartx, python-cliapp, ${python:Depends}, ${misc:Depends}
-Recommends: squashfs-tools
+Recommends: squashfs-tools, qemu-system-x86 [amd64], qemu-system-x86 [i386]
 Description: Bootstrap Debian into a (virtual machine) disk image
  vmdebootstrap is a wrapper around debootstrap to install Debian
  into a disk image, which can be used with a virtual machine (such as KVM).
+ .
+ syslinux and grub2 bootloaders can be supported, depending on the
+ distribution and the architecture. An example of setting up u-boot
+ for armhf on a beaglebone-black is included.

@@ -6,6 +6,8 @@ vmdebootstrap (0.3-1) UNRELEASED; urgency=medium
   * Drop manpage patch, included upstream
   * Drop kpartx patch, included upstream
   * Add example customisation scripts for armhf targets.
+  * Recommend qemu to test built images and add notes about bootloaders
+    to control file. Drop need for mbr, not used by default
 
  -- Neil Williams <codehelp@debian.org>  Sun, 10 Aug 2014 12:55:31 +0100
 
