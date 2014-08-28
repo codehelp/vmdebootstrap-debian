@@ -1,4 +1,4 @@
-vmdebootstrap (0.3-1) UNRELEASED; urgency=medium
+vmdebootstrap (0.3-1) unstable; urgency=medium
 
   * New upstream release
   * Allows images to not always be owned by root. Thanks to Nick Daly 
@@ -9,7 +9,7 @@ vmdebootstrap (0.3-1) UNRELEASED; urgency=medium
   * Recommend qemu to test built images and add notes about bootloaders
     to control file. Drop need for mbr, not used by default
 
- -- Neil Williams <codehelp@debian.org>  Sun, 10 Aug 2014 12:55:31 +0100
+ -- Neil Williams <codehelp@debian.org>  Wed, 27 Aug 2014 23:21:10 -0700
 
 vmdebootstrap (0.2-3) unstable; urgency=medium
 
