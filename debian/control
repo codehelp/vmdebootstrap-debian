@@ -1,13 +1,14 @@
 Source: vmdebootstrap
 Section: admin
 Priority: extra
-Maintainer: Neil Williams <codehelp@debian.org>
-Uploaders: Lars Wirzenius <liw@liw.fi>,
+Maintainer: VMDebootstrap List <vmdebootstrap-devel@lists.alioth.debian.org>
+Uploaders: Neil Williams <codehelp@debian.org>,
+ Lars Wirzenius <liw@liw.fi>,
  Antonio Terceiro <terceiro@debian.org>
 Build-Depends: debhelper (>= 8.0.0),
  python | python-all | python-dev | python-all-dev
 X-Python-Version: 2.7
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://git.liw.fi/cgi-bin/cgit/cgit.cgi/vmdebootstrap/
 Vcs-Git: git://anonscm.debian.org/collab-maint/vmdebootstrap.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/vmdebootstrap.git;a=summary
@@ -15,7 +16,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/vmdebootstrap.git;
 Package: vmdebootstrap
 Architecture: linux-any
 Depends: debootstrap, qemu-utils,
- extlinux [amd64], extlinux [i386], kpartx, parted,
+ extlinux [amd64], extlinux [i386], grub2-common, kpartx, parted,
  python-cliapp, ${python:Depends}, ${misc:Depends}
 Recommends: squashfs-tools, qemu-system, qemu-user-static
 Description: Bootstrap Debian into a (virtual machine) disk image

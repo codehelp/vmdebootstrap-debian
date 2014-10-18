@@ -1,3 +1,15 @@
+vmdebootstrap (0.4-1) unstable; urgency=medium
+
+  * Change Default mirror URL to use http://http.debian.net/debian/
+    (Closes: #765610)
+  * Run update-initramfs -u when installing a kernel package.
+    (Closes: #764596)
+  * Add devel mailing list as maintainer
+  * Add grub2-common as a dependency for grub install support.
+  * Set a noninteractive debconf environment for secondstage.
+
+ -- Neil Williams <codehelp@debian.org>  Sat, 18 Oct 2014 20:22:23 +0100
+
 vmdebootstrap (0.3-1) unstable; urgency=medium
 
   * New upstream release
