@@ -1,3 +1,10 @@
+vmdebootstrap (0.4-2) unstable; urgency=medium
+
+  * Avoid grub2-common on mips and s390x, falls back
+    to extlinux with a warning message.
+
+ -- Neil Williams <codehelp@debian.org>  Mon, 20 Oct 2014 18:38:13 +0100
+
 vmdebootstrap (0.4-1) unstable; urgency=medium
 
   * Change Default mirror URL to use http://http.debian.net/debian/
