@@ -16,8 +16,8 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/vmdebootstrap.git;
 Package: vmdebootstrap
 Architecture: linux-any
 Depends: debootstrap, qemu-utils,
- extlinux [amd64], extlinux [i386],
- grub2-common [!mips && !s390x], 
+ extlinux [amd64 i386],
+ grub2-common [!mips !s390x], 
  kpartx, parted,
  python-cliapp, ${python:Depends}, ${misc:Depends}
 Recommends: squashfs-tools, qemu-system, qemu-user-static
