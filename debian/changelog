@@ -1,3 +1,9 @@
+vmdebootstrap (0.4-3) UNRELEASED; urgency=medium
+
+  * Fix syntax for excluding grub2-common on mips and s390x
+
+ -- Neil Williams <codehelp@debian.org>  Tue, 21 Oct 2014 08:46:29 +0100
+
 vmdebootstrap (0.4-2) unstable; urgency=medium
 
   * Avoid grub2-common on mips and s390x, falls back
