@@ -1,3 +1,13 @@
+vmdebootstrap (0.5-1) unstable; urgency=medium
+
+  * New upstream bug fix release for Jessie.
+  * Allow parted to reserve space for grub2 on disk when
+    also using --bootsize option. (Closes: #767913)
+  * Move grub2-common to Recommends. (Closes: #767196)
+  * Add section on bootloaders to manpage.
+
+ -- Neil Williams <codehelp@debian.org>  Sun, 16 Nov 2014 15:11:34 +0000
+
 vmdebootstrap (0.4-3) unstable; urgency=medium
 
   * Fix syntax for excluding grub2-common on mips and s390x
