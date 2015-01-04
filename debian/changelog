@@ -1,3 +1,19 @@
+vmdebootstrap (0.6-1) experimental; urgency=medium
+
+  * New upstream release
+  * Implement support for bootoffset to allow space
+    ahead of the first partition.
+  * Prints which distribution (and which variant) is
+    being debootstrapped (Closes: #767806)
+  * Add notes on the types of images supported on ARM.
+  * Add option to create swap space inside the KVM, minimum
+    size 256Mb. (Closes: #764337)
+  * Update manpage to current mirror default. (Closes: #774477)
+  * Allow builds under buildbot where there is no tty. Patch
+    from Nick Daly <nick.m.daly@gmail.com> (Closes: #747373)
+
+ -- Neil Williams <codehelp@debian.org>  Tue, 23 Dec 2014 16:55:31 +0000
+
 vmdebootstrap (0.5-1) unstable; urgency=medium
 
   * New upstream bug fix release for Jessie.
