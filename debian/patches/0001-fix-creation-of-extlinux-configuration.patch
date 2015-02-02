@@ -1,0 +1,52 @@
+From 3a77e8b1178fcf49dd290659320dc736a1dfceef Mon Sep 17 00:00:00 2001
+From: Neil Williams <codehelp@debian.org>
+Date: Mon, 2 Feb 2015 16:38:50 -0200
+Subject: [PATCH 1/2] fix creation of extlinux configuration
+
+This change is a backport of 545b3e5065fa1f57540cb01255d911d3c5ef2f96
+
+Signed-off-by: Antonio Terceiro <terceiro@debian.org>
+---
+ vmdebootstrap | 19 +++++++++++++------
+ 1 file changed, 13 insertions(+), 6 deletions(-)
+
+diff --git a/vmdebootstrap b/vmdebootstrap
+index 24e38d0..74627e2 100755
+--- a/vmdebootstrap
++++ b/vmdebootstrap
+@@ -521,8 +521,9 @@ class VmDebootstrap(cliapp.Application):
+ 
+         conf = os.path.join(rootdir, 'extlinux.conf')
+         logging.debug('configure extlinux %s' % conf)
+-        f = open(conf, 'w')
+-        f.write('''
++        kserial = 'console=ttyS0,115200' if self.settings['serial-console'] else ''
++        extserial = 'serial 0 115200' if self.settings['serial-console'] else ''
++        msg = '''
+ default linux
+ timeout 1
+ 
+@@ -534,10 +535,16 @@ append initrd=%(initrd)s root=UUID=%(uuid)s ro %(kserial)s
+             'kernel': kernel_image,
+             'initrd': initrd_image,
+             'uuid': uuid,
+-            'kserial':
+-            'console=ttyS0,115200' if self.settings['serial-console'] else '',
+-            'extserial': 'serial 0 115200' if self.settings['serial-console'] else '',
+-        })
++            'kserial': kserial,
++            'extserial': extserial,
++        }
++        logging.debug("extlinux config:\n%s", msg)
++
++        # python multiline string substitution is just ugly.
++        # use an external file or live with the mangling, no point in
++        # mangling the string to remove spaces just to keep it pretty in source.
++        f = open(conf, 'w')
++        f.write(msg)
+         f.close()
+ 
+         self.runcmd(['extlinux', '--install', rootdir])
+-- 
+2.1.4
+

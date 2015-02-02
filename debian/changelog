@@ -1,3 +1,13 @@
+vmdebootstrap (0.5-2) unstable; urgency=medium
+
+  * Backport patches from upstream master branch to fix creation of images
+    larger than 1GB that use extlinux (the default). Closes: #774588
+    . In debian/patches/:
+      - 0001-fix-creation-of-extlinux-configuration.patch
+      - 0002-add-mbr-back-to-support-extlinux-and-check-for-insta.patch
+
+ -- Antonio Terceiro <terceiro@debian.org>  Mon, 02 Feb 2015 18:38:22 -0200
+
 vmdebootstrap (0.5-1) unstable; urgency=medium
 
   * New upstream bug fix release for Jessie.
