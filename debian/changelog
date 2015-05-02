@@ -1,3 +1,19 @@
+vmdebootstrap (0.7-1) unstable; urgency=medium
+
+  * New upstream release for unstable.
+  * Default to armmp kernel variant on armhf. Patches
+    from: Vagrant Cascadian <vagrant@debian.org>
+    (Closes: #776975)
+  * Add vmextract helper.
+  * Avoid adding extlinux config when using grub2
+    from Jan Gerber <j@mailb.org> (Closes: #742267)
+  * Installing grub with boot partition requires an offset
+    before the first partition. (Closes: #782307)
+  * Only configure console if serial-console is set
+    from  Jan Gerber <j@mailb.org> (Closes: #782304)
+
+ -- Neil Williams <codehelp@debian.org>  Sat, 02 May 2015 20:23:36 +0100
+
 vmdebootstrap (0.6-1) experimental; urgency=medium
 
   * New upstream release

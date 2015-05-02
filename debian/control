@@ -20,7 +20,7 @@ Depends: debootstrap, qemu-utils,
  mbr, kpartx, parted,
  python-cliapp, ${python:Depends}, ${misc:Depends}
 Recommends: grub2-common [!mips !s390x],
- squashfs-tools, qemu-system, qemu-user-static
+ squashfs-tools, python-guestfs, qemu-system, qemu-user-static
 Suggests: u-boot:armhf
 Description: Bootstrap Debian into a (virtual machine) disk image
  vmdebootstrap is a wrapper around debootstrap to install Debian
