@@ -1,3 +1,15 @@
+vmdebootstrap (0.8-1) unstable; urgency=medium
+
+  * New upstream release
+  * Use distro-info to handle change in the i386 arch kernel package
+    name (Closes: #786767)
+  * Change setup_networking to check for /etc/network/interfaces but
+    populate /etc/network/interfaces.d/setup (Closes: #788792)
+  * Add no-acpid option. (Closes: #784638)
+  * Add python-distro-info for release and codename support.
+
+ -- Neil Williams <codehelp@debian.org>  Sun, 28 Jun 2015 11:03:50 +0100
+
 vmdebootstrap (0.7-1) unstable; urgency=medium
 
   * New upstream release for unstable.

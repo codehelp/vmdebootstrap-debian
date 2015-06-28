@@ -18,7 +18,8 @@ Architecture: linux-any
 Depends: debootstrap, qemu-utils,
  extlinux [amd64 i386],
  mbr, kpartx, parted,
- python-cliapp, ${python:Depends}, ${misc:Depends}
+ python-cliapp, python-distro-info,
+ ${python:Depends}, ${misc:Depends}
 Recommends: grub2-common [!mips !s390x],
  squashfs-tools, python-guestfs, qemu-system, qemu-user-static
 Suggests: u-boot:armhf
