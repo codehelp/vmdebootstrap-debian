@@ -1,3 +1,12 @@
+vmdebootstrap (0.9-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add UEFI support using grub-efi
+  * Ensure that the /etc/network/interfaces.d/ directory
+    is created (Closes: #792182)
+
+ -- Neil Williams <codehelp@debian.org>  Sat, 15 Aug 2015 18:13:01 +0200
+
 vmdebootstrap (0.8-1) unstable; urgency=medium
 
   * New upstream release
