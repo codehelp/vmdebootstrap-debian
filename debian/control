@@ -3,15 +3,14 @@ Section: admin
 Priority: extra
 Maintainer: VMDebootstrap List <vmdebootstrap-devel@lists.alioth.debian.org>
 Uploaders: Neil Williams <codehelp@debian.org>,
- Lars Wirzenius <liw@liw.fi>,
  Antonio Terceiro <terceiro@debian.org>
 Build-Depends: debhelper (>= 8.0.0), dh-python,
  python | python-all | python-dev | python-all-dev
 X-Python-Version: 2.7
 Standards-Version: 3.9.6
 Homepage: http://git.liw.fi/cgi-bin/cgit/cgit.cgi/vmdebootstrap/
-Vcs-Git: git://anonscm.debian.org/collab-maint/vmdebootstrap.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/vmdebootstrap.git;a=summary
+Vcs-Git: https://github.com/codehelp/vmdebootstrap-debian.git
+Vcs-Browser: https://github.com/codehelp/vmdebootstrap-debian
 
 Package: vmdebootstrap
 Architecture: linux-any
