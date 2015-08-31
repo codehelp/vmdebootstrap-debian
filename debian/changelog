@@ -1,3 +1,10 @@
+vmdebootstrap (0.10-1) unstable; urgency=medium
+
+  * New upstream release - handle efi lookup of other
+    architectures. (Closes: #797445)
+
+ -- Neil Williams <codehelp@debian.org>  Mon, 31 Aug 2015 18:25:56 +0100
+
 vmdebootstrap (0.9-1) unstable; urgency=medium
 
   * New upstream release
