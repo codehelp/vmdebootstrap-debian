@@ -1,3 +1,4 @@
-vmdebootstrap ./usr/sbin/
 examples ./usr/share/vmdebootstrap/
 vmextract.py ./usr/share/vmdebootstrap/
+common ./usr/share/vmdebootstrap/
+doc/_build/html/ ./usr/share/doc/vmdebootstrap/

@@ -1,3 +1,9 @@
+vmdebootstrap (1.0-1) experimental; urgency=medium
+
+  * New upstream release for experimental.
+
+ -- Neil Williams <codehelp@debian.org>  Sun, 13 Sep 2015 21:37:00 +0100
+
 vmdebootstrap (0.11-1) unstable; urgency=medium
 
   * New upstream release - handle efi options for wheezy support.

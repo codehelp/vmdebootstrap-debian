@@ -5,6 +5,7 @@ Maintainer: VMDebootstrap List <vmdebootstrap-devel@lists.alioth.debian.org>
 Uploaders: Neil Williams <codehelp@debian.org>,
  Antonio Terceiro <terceiro@debian.org>
 Build-Depends: debhelper (>= 8.0.0), dh-python,
+ python-sphinx (>= 1.0.7+dfsg) | python3-sphinx,
  python | python-all | python-dev | python-all-dev
 X-Python-Version: 2.7
 Standards-Version: 3.9.6
@@ -17,8 +18,7 @@ Architecture: linux-any
 Depends: debootstrap, qemu-utils,
  extlinux [amd64 i386],
  mbr, kpartx, parted,
- python-cliapp (>= 1.20150829), python-distro-info,
- ${python:Depends}, ${misc:Depends}
+ ${sphinxdoc:Depends}, ${python:Depends}, ${misc:Depends}
 Recommends: grub2-common [!mips !s390x],
  squashfs-tools, python-guestfs, qemu-system, qemu-user-static
 Suggests: u-boot:armhf
@@ -29,3 +29,6 @@ Description: Bootstrap Debian into a (virtual machine) disk image
  syslinux and grub2 bootloaders can be supported, depending on the
  distribution and the architecture. An example of setting up u-boot
  for armhf on a beaglebone-black is included.
+ .
+ This package also includes documentation on using vmdebootstrap
+ to create installation images and live images.
