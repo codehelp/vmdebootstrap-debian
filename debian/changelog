@@ -1,3 +1,13 @@
+vmdebootstrap (0.11-1) unstable; urgency=medium
+
+  * New upstream release - handle efi options for wheezy support.
+    (Closes: #798225)
+  * Add debootstrapopts support to pass debootstrap options unchanged,
+    deprecate variant support which this replaces. (Closes: #770722)
+  * Reinstate headless supporti. (Closes: #798723)
+
+ -- Neil Williams <codehelp@debian.org>  Sun, 13 Sep 2015 11:15:03 +0100
+
 vmdebootstrap (0.10-1) unstable; urgency=medium
 
   * New upstream release - handle efi lookup of other
