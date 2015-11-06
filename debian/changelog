@@ -1,3 +1,17 @@
+vmdebootstrap (1.2-1) unstable; urgency=medium
+
+  * New upstream release, migrating from experimental.
+  * Skip serial-console support except on Wheezy. (Closes: #800910)
+  * Add support for mounting and umounting /dev/pts
+    (Closes: #802752)
+  * Support alternative initramfs implementations.
+    (Closes: #801214)
+  * Add Iain R. Learmonth as uploader
+  * Update VCS locations for alioth.
+  * Add cmdtest to Suggests for yarn tests.
+
+ -- Neil Williams <codehelp@debian.org>  Thu, 05 Nov 2015 16:49:48 +0000
+
 vmdebootstrap (1.1-1) experimental; urgency=medium
 
   * New upstream release for experimental
