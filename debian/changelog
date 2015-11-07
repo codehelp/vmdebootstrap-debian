@@ -4,8 +4,6 @@ vmdebootstrap (1.2-1) unstable; urgency=medium
   * Skip serial-console support except on Wheezy. (Closes: #800910)
   * Add support for mounting and umounting /dev/pts
     (Closes: #802752)
-  * Support alternative initramfs implementations.
-    (Closes: #801214)
   * Add Iain R. Learmonth as uploader
   * Update VCS locations for alioth.
   * Add cmdtest to Suggests for yarn tests.
