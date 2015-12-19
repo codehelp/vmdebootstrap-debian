@@ -1,3 +1,11 @@
+vmdebootstrap (1.2-2) unstable; urgency=medium
+
+  * Add autopkgtest support for simple internal tests.
+  * Add tests on the package include functions and ensure that
+    no-kernel option works. (Closes: #808358)
+
+ -- Neil Williams <codehelp@debian.org>  Sat, 19 Dec 2015 09:59:09 +0000
+
 vmdebootstrap (1.2-1~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports.

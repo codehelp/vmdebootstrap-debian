@@ -9,6 +9,7 @@ Build-Depends: debhelper (>= 8.0.0), dh-python,
  python-sphinx (>= 1.0.7+dfsg) | python3-sphinx,
  python | python-all | python-dev | python-all-dev,
  python-setuptools (>= 3)
+Testsuite: autopkgtest
 X-Python-Version: 2.7
 Standards-Version: 3.9.6
 Homepage: https://vmdebootstrap.alioth.debian.org/
