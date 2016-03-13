@@ -1,3 +1,15 @@
+vmdebootstrap (1.5-1) unstable; urgency=medium
+
+  * Improve documentation of SIZE setting. (Closes: #812727)
+  * Set boot partition type based on boottype. 
+    (Closes: #815256)
+  * Fix issue with fstab entry for boot partition. 
+    (Closes: #815255)
+  * Catch typos where the requested size is too small for a
+    bootstrap. (Closes: #811464)
+
+ -- Neil Williams <codehelp@debian.org>  Sun, 13 Mar 2016 14:44:53 +0000
+
 vmdebootstrap (1.4-1) unstable; urgency=medium
 
   * New upstream release.
