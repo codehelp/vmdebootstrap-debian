@@ -22,7 +22,7 @@ Depends: debootstrap, qemu-utils,
  extlinux [amd64 i386],
  mbr, kpartx, parted,
  ${sphinxdoc:Depends}, ${python:Depends}, ${misc:Depends}
-Recommends: grub2-common [!mips !s390x],
+Recommends: dosfstools, grub2-common [!mips !s390x],
  squashfs-tools, python-guestfs, qemu-system, qemu-user-static
 Suggests: cmdtest, pandoc, u-boot:armhf
 Description: Bootstrap Debian into a (virtual machine) disk image
