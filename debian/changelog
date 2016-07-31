@@ -1,3 +1,21 @@
+vmdebootstrap (1.6-1) unstable; urgency=medium
+
+  * Deprecating extlinux as default - to switch to grub in a
+    future release.
+  * Fix customisation support for alternative mirrors.
+  * Switch to --no-systemd-networkd in man page (Closes: #831025)
+  * Enable systemd-resolved together with systemd-networkd to
+    ensure the final image has working DNS. (Closes: #831439)
+  * Reset umask before creating files and restore. (Closes: #822180)
+  * Disable ext4 with wheezy image (Closes: #822452)
+  * Update documentation for --customize. (Closes: #826275)
+  * Umount before doing the qcow2 conversion. (Closes: #831029)
+  * Ensure chown is called after the qcow2 conversion. (Closes: #831030)
+  * Exclude metadata_csum when building ext4 jessie images
+    (Closes: #827130)
+
+ -- Neil Williams <codehelp@debian.org>  Sun, 17 Jul 2016 15:29:01 +0100
+
 vmdebootstrap (1.5-1) unstable; urgency=medium
 
   * Improve documentation of SIZE setting. (Closes: #812727)
