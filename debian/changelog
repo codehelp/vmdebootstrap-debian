@@ -13,6 +13,7 @@ vmdebootstrap (1.6-1) unstable; urgency=medium
   * Ensure chown is called after the qcow2 conversion. (Closes: #831030)
   * Exclude metadata_csum when building ext4 jessie images
     (Closes: #827130)
+  * Support dependencies of custom packages. (Closes: #833398)
 
  -- Neil Williams <codehelp@debian.org>  Sun, 17 Jul 2016 15:29:01 +0100
 
